@@ -5,9 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Context\" />
-    <Folder Include="Entities\" />
-    <Folder Include="Repositories\" />
+    <ProjectReference Include="..\..\..\Common\BookReader.Common\BookReader.Common.csproj" />
+    <ProjectReference Include="..\..\..\Common\BookReader.GenericEFRepository\BookReader.GenericEFRepository.csproj" />
   </ItemGroup>
 
 </Project>
