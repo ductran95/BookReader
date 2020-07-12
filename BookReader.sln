@@ -41,27 +41,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.BookService.Infr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.BookService.Domain", "src\MicroServices\Book\BookReader.BookService.Domain\BookReader.BookService.Domain.csproj", "{59DC6802-96F1-4292-93FD-FB66D8607646}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.BookService.EFQueries", "src\MicroServices\Book\BookReader.BookService.EFQueries\BookReader.BookService.EFQueries.csproj", "{1460FCD4-9B43-4388-8BDA-E822D0F05561}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.BookService.DapperQueries", "src\MicroServices\Book\BookReader.BookService.DapperQueries\BookReader.BookService.DapperQueries.csproj", "{F1A7B160-8842-4E26-A80B-D86CF4487164}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.BookService.Queries", "src\MicroServices\Book\BookReader.BookService.Queries\BookReader.BookService.Queries.csproj", "{1460FCD4-9B43-4388-8BDA-E822D0F05561}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.IdentityService.API", "src\MicroServices\Identity\BookReader.IdentityService.API\BookReader.IdentityService.API.csproj", "{5B0094C2-54E9-4FDA-8DFC-1B0AE2B82C59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.IdentityService.DapperQueries", "src\MicroServices\Identity\BookReader.IdentityService.DapperQueries\BookReader.IdentityService.DapperQueries.csproj", "{8F703872-1EC6-428A-AE0F-9D5344A10B9A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.IdentityService.Domain", "src\MicroServices\Identity\BookReader.IdentityService.Domain\BookReader.IdentityService.Domain.csproj", "{0FF1E795-0312-45EC-8E0C-484922A1D0FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.IdentityService.EFQueries", "src\MicroServices\Identity\BookReader.IdentityService.EFQueries\BookReader.IdentityService.EFQueries.csproj", "{15503835-B68E-476C-B701-776F7E7E3FF6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.IdentityService.Queries", "src\MicroServices\Identity\BookReader.IdentityService.Queries\BookReader.IdentityService.Queries.csproj", "{15503835-B68E-476C-B701-776F7E7E3FF6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.IdentityService.Infrastructure", "src\MicroServices\Identity\BookReader.IdentityService.Infrastructure\BookReader.IdentityService.Infrastructure.csproj", "{18A78E7D-2D8D-46D0-A61D-0FC5F0E3AFFC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.LibraryService.API", "src\MicroServices\Library\BookReader.LibraryService.API\BookReader.LibraryService.API.csproj", "{45B82901-9906-4604-9E72-FD87355F6624}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.LibraryService.DapperQueries", "src\MicroServices\Library\BookReader.LibraryService.DapperQueries\BookReader.LibraryService.DapperQueries.csproj", "{7B5EC537-9CCF-4660-A325-8F7F06CF6214}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.LibraryService.Domain", "src\MicroServices\Library\BookReader.LibraryService.Domain\BookReader.LibraryService.Domain.csproj", "{53055667-0106-48A8-9D2D-3218E20A40D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.LibraryService.EFQueries", "src\MicroServices\Library\BookReader.LibraryService.EFQueries\BookReader.LibraryService.EFQueries.csproj", "{38E7D15C-4396-4006-8ED3-75DF09EA4BC3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.LibraryService.Queries", "src\MicroServices\Library\BookReader.LibraryService.Queries\BookReader.LibraryService.Queries.csproj", "{38E7D15C-4396-4006-8ED3-75DF09EA4BC3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.LibraryService.Infrastructure", "src\MicroServices\Library\BookReader.LibraryService.Infrastructure\BookReader.LibraryService.Infrastructure.csproj", "{93649332-D140-4982-85C3-F8B8F6A53B8F}"
 EndProject
@@ -69,9 +63,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.MasterDataServic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.MasterDataService.Domain", "src\MicroServices\MasterData\BookReader.MasterDataService.Domain\BookReader.MasterDataService.Domain.csproj", "{2778D378-EAAB-4484-AE08-3206FB7C7864}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.MasterDataService.DapperQueries", "src\MicroServices\MasterData\BookReader.MasterDataService.DapperQueries\BookReader.MasterDataService.DapperQueries.csproj", "{D5C8D73C-504A-4CFA-8367-C9BC449C38B9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.MasterDataService.EFQueries", "src\MicroServices\MasterData\BookReader.MasterDataService.EFQueries\BookReader.MasterDataService.EFQueries.csproj", "{D1359103-8217-4E73-B1FC-3E9A85064D46}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.MasterDataService.Queries", "src\MicroServices\MasterData\BookReader.MasterDataService.Queries\BookReader.MasterDataService.Queries.csproj", "{D1359103-8217-4E73-B1FC-3E9A85064D46}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.MasterDataService.Infrastructure", "src\MicroServices\MasterData\BookReader.MasterDataService.Infrastructure\BookReader.MasterDataService.Infrastructure.csproj", "{227DA5C9-FEBF-489A-8B33-606264858AB3}"
 EndProject
@@ -125,18 +117,10 @@ Global
 		{1460FCD4-9B43-4388-8BDA-E822D0F05561}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1460FCD4-9B43-4388-8BDA-E822D0F05561}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1460FCD4-9B43-4388-8BDA-E822D0F05561}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F1A7B160-8842-4E26-A80B-D86CF4487164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F1A7B160-8842-4E26-A80B-D86CF4487164}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F1A7B160-8842-4E26-A80B-D86CF4487164}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F1A7B160-8842-4E26-A80B-D86CF4487164}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5B0094C2-54E9-4FDA-8DFC-1B0AE2B82C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5B0094C2-54E9-4FDA-8DFC-1B0AE2B82C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B0094C2-54E9-4FDA-8DFC-1B0AE2B82C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B0094C2-54E9-4FDA-8DFC-1B0AE2B82C59}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8F703872-1EC6-428A-AE0F-9D5344A10B9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8F703872-1EC6-428A-AE0F-9D5344A10B9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8F703872-1EC6-428A-AE0F-9D5344A10B9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8F703872-1EC6-428A-AE0F-9D5344A10B9A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0FF1E795-0312-45EC-8E0C-484922A1D0FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0FF1E795-0312-45EC-8E0C-484922A1D0FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FF1E795-0312-45EC-8E0C-484922A1D0FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -153,10 +137,6 @@ Global
 		{45B82901-9906-4604-9E72-FD87355F6624}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45B82901-9906-4604-9E72-FD87355F6624}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45B82901-9906-4604-9E72-FD87355F6624}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7B5EC537-9CCF-4660-A325-8F7F06CF6214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7B5EC537-9CCF-4660-A325-8F7F06CF6214}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7B5EC537-9CCF-4660-A325-8F7F06CF6214}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7B5EC537-9CCF-4660-A325-8F7F06CF6214}.Release|Any CPU.Build.0 = Release|Any CPU
 		{53055667-0106-48A8-9D2D-3218E20A40D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{53055667-0106-48A8-9D2D-3218E20A40D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53055667-0106-48A8-9D2D-3218E20A40D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -177,10 +157,6 @@ Global
 		{2778D378-EAAB-4484-AE08-3206FB7C7864}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2778D378-EAAB-4484-AE08-3206FB7C7864}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2778D378-EAAB-4484-AE08-3206FB7C7864}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D5C8D73C-504A-4CFA-8367-C9BC449C38B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D5C8D73C-504A-4CFA-8367-C9BC449C38B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D5C8D73C-504A-4CFA-8367-C9BC449C38B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D5C8D73C-504A-4CFA-8367-C9BC449C38B9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D1359103-8217-4E73-B1FC-3E9A85064D46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D1359103-8217-4E73-B1FC-3E9A85064D46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1359103-8217-4E73-B1FC-3E9A85064D46}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -209,20 +185,16 @@ Global
 		{B4E0FE01-DE5E-4662-8554-7E99F8148077} = {C188B1EC-538B-457C-B5C7-38E3678F2EA4}
 		{59DC6802-96F1-4292-93FD-FB66D8607646} = {C188B1EC-538B-457C-B5C7-38E3678F2EA4}
 		{1460FCD4-9B43-4388-8BDA-E822D0F05561} = {C188B1EC-538B-457C-B5C7-38E3678F2EA4}
-		{F1A7B160-8842-4E26-A80B-D86CF4487164} = {C188B1EC-538B-457C-B5C7-38E3678F2EA4}
 		{5B0094C2-54E9-4FDA-8DFC-1B0AE2B82C59} = {F00120C6-C5F6-499D-8015-9BCD40F8B3DD}
-		{8F703872-1EC6-428A-AE0F-9D5344A10B9A} = {F00120C6-C5F6-499D-8015-9BCD40F8B3DD}
 		{0FF1E795-0312-45EC-8E0C-484922A1D0FF} = {F00120C6-C5F6-499D-8015-9BCD40F8B3DD}
 		{15503835-B68E-476C-B701-776F7E7E3FF6} = {F00120C6-C5F6-499D-8015-9BCD40F8B3DD}
 		{18A78E7D-2D8D-46D0-A61D-0FC5F0E3AFFC} = {F00120C6-C5F6-499D-8015-9BCD40F8B3DD}
 		{45B82901-9906-4604-9E72-FD87355F6624} = {57F64093-5079-444E-8C6C-C8E86FFE51D8}
-		{7B5EC537-9CCF-4660-A325-8F7F06CF6214} = {57F64093-5079-444E-8C6C-C8E86FFE51D8}
 		{53055667-0106-48A8-9D2D-3218E20A40D8} = {57F64093-5079-444E-8C6C-C8E86FFE51D8}
 		{38E7D15C-4396-4006-8ED3-75DF09EA4BC3} = {57F64093-5079-444E-8C6C-C8E86FFE51D8}
 		{93649332-D140-4982-85C3-F8B8F6A53B8F} = {57F64093-5079-444E-8C6C-C8E86FFE51D8}
 		{FEB56D05-76BB-4232-BDD5-F2942E25E79E} = {ABF9CD54-6CDA-40C4-AA57-5CDF59B13325}
 		{2778D378-EAAB-4484-AE08-3206FB7C7864} = {ABF9CD54-6CDA-40C4-AA57-5CDF59B13325}
-		{D5C8D73C-504A-4CFA-8367-C9BC449C38B9} = {ABF9CD54-6CDA-40C4-AA57-5CDF59B13325}
 		{D1359103-8217-4E73-B1FC-3E9A85064D46} = {ABF9CD54-6CDA-40C4-AA57-5CDF59B13325}
 		{227DA5C9-FEBF-489A-8B33-606264858AB3} = {ABF9CD54-6CDA-40C4-AA57-5CDF59B13325}
 	EndGlobalSection

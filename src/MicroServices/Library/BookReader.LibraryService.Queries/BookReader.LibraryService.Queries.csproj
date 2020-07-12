@@ -5,12 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dapper" Version="2.0.35" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Common\BookReader.GenericDapperRepository\BookReader.GenericDapperRepository.csproj" />
-    <ProjectReference Include="..\BookReader.IdentityService.Infrastructure\BookReader.IdentityService.Infrastructure.csproj" />
+    <ProjectReference Include="..\BookReader.LibraryService.Infrastructure\BookReader.LibraryService.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

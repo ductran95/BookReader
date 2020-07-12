@@ -10,7 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Library\BookReader.LibraryService.Infrastructure\BookReader.LibraryService.Infrastructure.csproj" />
+    <ProjectReference Include="..\BookReader.MasterDataService.Infrastructure\BookReader.MasterDataService.Infrastructure.csproj" />
+    <ProjectReference Include="..\BookReader.MasterDataService.Queries\BookReader.MasterDataService.Queries.csproj" />
   </ItemGroup>
 
 </Project>

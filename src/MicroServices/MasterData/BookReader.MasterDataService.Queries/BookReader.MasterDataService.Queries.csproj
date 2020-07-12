@@ -10,7 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BookReader.IdentityService.Infrastructure\BookReader.IdentityService.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\Common\BookReader.GenericDapperRepository\BookReader.GenericDapperRepository.csproj" />
+    <ProjectReference Include="..\BookReader.MasterDataService.Infrastructure\BookReader.MasterDataService.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

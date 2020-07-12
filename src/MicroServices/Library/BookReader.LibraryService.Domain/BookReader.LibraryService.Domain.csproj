@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BookReader.LibraryService.Infrastructure\BookReader.LibraryService.Infrastructure.csproj" />
+    <ProjectReference Include="..\BookReader.LibraryService.Queries\BookReader.LibraryService.Queries.csproj" />
   </ItemGroup>
 
 </Project>
