@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Common\BookReader.Common\BookReader.Common.csproj" />
+    <ProjectReference Include="..\..\Core\BookReader.Common\BookReader.Common.csproj" />
   </ItemGroup>
 
 </Project>

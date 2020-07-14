@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{039A3C3A-CA85-4E62-8385-06F839101C31}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{36AB8990-E8CA-4658-82AB-B3BF387BF9AC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{36AB8990-E8CA-4658-82AB-B3BF387BF9AC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventBus", "EventBus", "{ACC595B7-13C4-434C-9880-DCC0B7E9E77E}"
 EndProject
@@ -21,51 +21,67 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{57F6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MasterData", "MasterData", "{ABF9CD54-6CDA-40C4-AA57-5CDF59B13325}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.Common", "src\Common\BookReader.Common\BookReader.Common.csproj", "{3B1ED1A8-C98E-4894-9EF7-FBC20AFE3D5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.Common", "src\Core\BookReader.Common\BookReader.Common.csproj", "{3B1ED1A8-C98E-4894-9EF7-FBC20AFE3D5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.PublicGateway", "src\ApiGateways\BookReader.PublicGateway\BookReader.PublicGateway.csproj", "{0EE63529-DEF5-4A1F-8410-24D97CDF5083}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.PublicGateway", "src\ApiGateways\BookReader.PublicGateway\BookReader.PublicGateway.csproj", "{0EE63529-DEF5-4A1F-8410-24D97CDF5083}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.InternalGateway", "src\ApiGateways\BookReader.InternalGateway\BookReader.InternalGateway.csproj", "{1A38B228-743B-48F2-A0EA-CA6B1C2DA93F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.InternalGateway", "src\ApiGateways\BookReader.InternalGateway\BookReader.InternalGateway.csproj", "{1A38B228-743B-48F2-A0EA-CA6B1C2DA93F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.RabbitMQ", "src\EventBus\BookReader.RabbitMQ\BookReader.RabbitMQ.csproj", "{A5A8C760-5583-4408-8D86-D667B3C737F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.RabbitMQ", "src\EventBus\BookReader.RabbitMQ\BookReader.RabbitMQ.csproj", "{A5A8C760-5583-4408-8D86-D667B3C737F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.ServiceBus", "src\EventBus\BookReader.ServiceBus\BookReader.ServiceBus.csproj", "{ABE69267-DA47-45D7-8996-FF421AD8B465}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.ServiceBus", "src\EventBus\BookReader.ServiceBus\BookReader.ServiceBus.csproj", "{ABE69267-DA47-45D7-8996-FF421AD8B465}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.GenericEFRepository", "src\Common\BookReader.GenericEFRepository\BookReader.GenericEFRepository.csproj", "{174AFC39-4D22-4199-BAC5-26A0EB2E59A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.EntityFramework.Core", "src\Core\BookReader.EntityFramework.Core\BookReader.EntityFramework.Core.csproj", "{174AFC39-4D22-4199-BAC5-26A0EB2E59A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.GenericDapperRepository", "src\Common\BookReader.GenericDapperRepository\BookReader.GenericDapperRepository.csproj", "{C14DCA6D-7451-4182-B0F5-746E7475F11E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.Dapper.Core", "src\Core\BookReader.Dapper.Core\BookReader.Dapper.Core.csproj", "{C14DCA6D-7451-4182-B0F5-746E7475F11E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.BookService.API", "src\MicroServices\Book\BookReader.BookService.API\BookReader.BookService.API.csproj", "{400B8FBB-D838-4AC2-A3A9-B64EDE8F3722}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.BookService.API", "src\MicroServices\Book\BookReader.BookService.API\BookReader.BookService.API.csproj", "{400B8FBB-D838-4AC2-A3A9-B64EDE8F3722}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.BookService.Infrastructure", "src\MicroServices\Book\BookReader.BookService.Infrastructure\BookReader.BookService.Infrastructure.csproj", "{B4E0FE01-DE5E-4662-8554-7E99F8148077}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.BookService.Infrastructure", "src\MicroServices\Book\BookReader.BookService.Infrastructure\BookReader.BookService.Infrastructure.csproj", "{B4E0FE01-DE5E-4662-8554-7E99F8148077}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.BookService.Domain", "src\MicroServices\Book\BookReader.BookService.Domain\BookReader.BookService.Domain.csproj", "{59DC6802-96F1-4292-93FD-FB66D8607646}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.BookService.Domain", "src\MicroServices\Book\BookReader.BookService.Domain\BookReader.BookService.Domain.csproj", "{59DC6802-96F1-4292-93FD-FB66D8607646}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.BookService.Queries", "src\MicroServices\Book\BookReader.BookService.Queries\BookReader.BookService.Queries.csproj", "{1460FCD4-9B43-4388-8BDA-E822D0F05561}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.BookService.Queries", "src\MicroServices\Book\BookReader.BookService.Queries\BookReader.BookService.Queries.csproj", "{1460FCD4-9B43-4388-8BDA-E822D0F05561}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.IdentityService.API", "src\MicroServices\Identity\BookReader.IdentityService.API\BookReader.IdentityService.API.csproj", "{5B0094C2-54E9-4FDA-8DFC-1B0AE2B82C59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.IdentityService.API", "src\MicroServices\Identity\BookReader.IdentityService.API\BookReader.IdentityService.API.csproj", "{5B0094C2-54E9-4FDA-8DFC-1B0AE2B82C59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.IdentityService.Domain", "src\MicroServices\Identity\BookReader.IdentityService.Domain\BookReader.IdentityService.Domain.csproj", "{0FF1E795-0312-45EC-8E0C-484922A1D0FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.IdentityService.Domain", "src\MicroServices\Identity\BookReader.IdentityService.Domain\BookReader.IdentityService.Domain.csproj", "{0FF1E795-0312-45EC-8E0C-484922A1D0FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.IdentityService.Queries", "src\MicroServices\Identity\BookReader.IdentityService.Queries\BookReader.IdentityService.Queries.csproj", "{15503835-B68E-476C-B701-776F7E7E3FF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.IdentityService.Queries", "src\MicroServices\Identity\BookReader.IdentityService.Queries\BookReader.IdentityService.Queries.csproj", "{15503835-B68E-476C-B701-776F7E7E3FF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.IdentityService.Infrastructure", "src\MicroServices\Identity\BookReader.IdentityService.Infrastructure\BookReader.IdentityService.Infrastructure.csproj", "{18A78E7D-2D8D-46D0-A61D-0FC5F0E3AFFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.IdentityService.Infrastructure", "src\MicroServices\Identity\BookReader.IdentityService.Infrastructure\BookReader.IdentityService.Infrastructure.csproj", "{18A78E7D-2D8D-46D0-A61D-0FC5F0E3AFFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.LibraryService.API", "src\MicroServices\Library\BookReader.LibraryService.API\BookReader.LibraryService.API.csproj", "{45B82901-9906-4604-9E72-FD87355F6624}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.LibraryService.API", "src\MicroServices\Library\BookReader.LibraryService.API\BookReader.LibraryService.API.csproj", "{45B82901-9906-4604-9E72-FD87355F6624}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.LibraryService.Domain", "src\MicroServices\Library\BookReader.LibraryService.Domain\BookReader.LibraryService.Domain.csproj", "{53055667-0106-48A8-9D2D-3218E20A40D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.LibraryService.Domain", "src\MicroServices\Library\BookReader.LibraryService.Domain\BookReader.LibraryService.Domain.csproj", "{53055667-0106-48A8-9D2D-3218E20A40D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.LibraryService.Queries", "src\MicroServices\Library\BookReader.LibraryService.Queries\BookReader.LibraryService.Queries.csproj", "{38E7D15C-4396-4006-8ED3-75DF09EA4BC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.LibraryService.Queries", "src\MicroServices\Library\BookReader.LibraryService.Queries\BookReader.LibraryService.Queries.csproj", "{38E7D15C-4396-4006-8ED3-75DF09EA4BC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.LibraryService.Infrastructure", "src\MicroServices\Library\BookReader.LibraryService.Infrastructure\BookReader.LibraryService.Infrastructure.csproj", "{93649332-D140-4982-85C3-F8B8F6A53B8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.LibraryService.Infrastructure", "src\MicroServices\Library\BookReader.LibraryService.Infrastructure\BookReader.LibraryService.Infrastructure.csproj", "{93649332-D140-4982-85C3-F8B8F6A53B8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.MasterDataService.API", "src\MicroServices\MasterData\BookReader.MasterDataService.API\BookReader.MasterDataService.API.csproj", "{FEB56D05-76BB-4232-BDD5-F2942E25E79E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.MasterDataService.API", "src\MicroServices\MasterData\BookReader.MasterDataService.API\BookReader.MasterDataService.API.csproj", "{FEB56D05-76BB-4232-BDD5-F2942E25E79E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.MasterDataService.Domain", "src\MicroServices\MasterData\BookReader.MasterDataService.Domain\BookReader.MasterDataService.Domain.csproj", "{2778D378-EAAB-4484-AE08-3206FB7C7864}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.MasterDataService.Domain", "src\MicroServices\MasterData\BookReader.MasterDataService.Domain\BookReader.MasterDataService.Domain.csproj", "{2778D378-EAAB-4484-AE08-3206FB7C7864}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.MasterDataService.Queries", "src\MicroServices\MasterData\BookReader.MasterDataService.Queries\BookReader.MasterDataService.Queries.csproj", "{D1359103-8217-4E73-B1FC-3E9A85064D46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.MasterDataService.Queries", "src\MicroServices\MasterData\BookReader.MasterDataService.Queries\BookReader.MasterDataService.Queries.csproj", "{D1359103-8217-4E73-B1FC-3E9A85064D46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.MasterDataService.Infrastructure", "src\MicroServices\MasterData\BookReader.MasterDataService.Infrastructure\BookReader.MasterDataService.Infrastructure.csproj", "{227DA5C9-FEBF-489A-8B33-606264858AB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.MasterDataService.Infrastructure", "src\MicroServices\MasterData\BookReader.MasterDataService.Infrastructure\BookReader.MasterDataService.Infrastructure.csproj", "{227DA5C9-FEBF-489A-8B33-606264858AB3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.Infrastructure.Core", "src\Core\BookReader.Infrastructure.Core\BookReader.Infrastructure.Core.csproj", "{ECA1D07B-1F9C-481D-A008-50E94A7FD2EB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookReader.Domain.Core", "src\Core\BookReader.Domain.Core\BookReader.Domain.Core.csproj", "{67256A40-7481-4925-A6A2-66EF22DD718B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.Data.Core", "src\Core\BookReader.Data.Core\BookReader.Data.Core.csproj", "{C09BF5C1-A48C-443D-8A93-B84E3673EE48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.EventBus.Core", "src\EventBus\BookReader.EventBus.Core\BookReader.EventBus.Core.csproj", "{DFEC6068-DA29-4BE1-87E7-5BE8F29FCA07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.BookService.Data", "src\MicroServices\Book\BookReader.BookService.Data\BookReader.BookService.Data.csproj", "{F7007DB2-7819-4F8D-90DF-563701887C72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.LibraryService.Data", "src\MicroServices\Library\BookReader.LibraryService.Data\BookReader.LibraryService.Data.csproj", "{98622D99-F0C2-46E3-8F2D-0F25F0C6078C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.MasterDataService.Data", "src\MicroServices\MasterData\BookReader.MasterDataService.Data\BookReader.MasterDataService.Data.csproj", "{6471CD1A-B7F8-4DDE-BE94-FFA53B9B1988}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader.IdentityService.Data", "src\MicroServices\Identity\BookReader.IdentityService.Data\BookReader.IdentityService.Data.csproj", "{E74C9E5D-2B5D-4932-A9CF-0F52C8D7EF59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +181,38 @@ Global
 		{227DA5C9-FEBF-489A-8B33-606264858AB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{227DA5C9-FEBF-489A-8B33-606264858AB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{227DA5C9-FEBF-489A-8B33-606264858AB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECA1D07B-1F9C-481D-A008-50E94A7FD2EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECA1D07B-1F9C-481D-A008-50E94A7FD2EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECA1D07B-1F9C-481D-A008-50E94A7FD2EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECA1D07B-1F9C-481D-A008-50E94A7FD2EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67256A40-7481-4925-A6A2-66EF22DD718B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67256A40-7481-4925-A6A2-66EF22DD718B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67256A40-7481-4925-A6A2-66EF22DD718B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67256A40-7481-4925-A6A2-66EF22DD718B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C09BF5C1-A48C-443D-8A93-B84E3673EE48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C09BF5C1-A48C-443D-8A93-B84E3673EE48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C09BF5C1-A48C-443D-8A93-B84E3673EE48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C09BF5C1-A48C-443D-8A93-B84E3673EE48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFEC6068-DA29-4BE1-87E7-5BE8F29FCA07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFEC6068-DA29-4BE1-87E7-5BE8F29FCA07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFEC6068-DA29-4BE1-87E7-5BE8F29FCA07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFEC6068-DA29-4BE1-87E7-5BE8F29FCA07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7007DB2-7819-4F8D-90DF-563701887C72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7007DB2-7819-4F8D-90DF-563701887C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7007DB2-7819-4F8D-90DF-563701887C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7007DB2-7819-4F8D-90DF-563701887C72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98622D99-F0C2-46E3-8F2D-0F25F0C6078C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98622D99-F0C2-46E3-8F2D-0F25F0C6078C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98622D99-F0C2-46E3-8F2D-0F25F0C6078C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98622D99-F0C2-46E3-8F2D-0F25F0C6078C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6471CD1A-B7F8-4DDE-BE94-FFA53B9B1988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6471CD1A-B7F8-4DDE-BE94-FFA53B9B1988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6471CD1A-B7F8-4DDE-BE94-FFA53B9B1988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6471CD1A-B7F8-4DDE-BE94-FFA53B9B1988}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E74C9E5D-2B5D-4932-A9CF-0F52C8D7EF59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E74C9E5D-2B5D-4932-A9CF-0F52C8D7EF59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E74C9E5D-2B5D-4932-A9CF-0F52C8D7EF59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E74C9E5D-2B5D-4932-A9CF-0F52C8D7EF59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -197,6 +245,14 @@ Global
 		{2778D378-EAAB-4484-AE08-3206FB7C7864} = {ABF9CD54-6CDA-40C4-AA57-5CDF59B13325}
 		{D1359103-8217-4E73-B1FC-3E9A85064D46} = {ABF9CD54-6CDA-40C4-AA57-5CDF59B13325}
 		{227DA5C9-FEBF-489A-8B33-606264858AB3} = {ABF9CD54-6CDA-40C4-AA57-5CDF59B13325}
+		{ECA1D07B-1F9C-481D-A008-50E94A7FD2EB} = {36AB8990-E8CA-4658-82AB-B3BF387BF9AC}
+		{67256A40-7481-4925-A6A2-66EF22DD718B} = {36AB8990-E8CA-4658-82AB-B3BF387BF9AC}
+		{C09BF5C1-A48C-443D-8A93-B84E3673EE48} = {36AB8990-E8CA-4658-82AB-B3BF387BF9AC}
+		{DFEC6068-DA29-4BE1-87E7-5BE8F29FCA07} = {ACC595B7-13C4-434C-9880-DCC0B7E9E77E}
+		{F7007DB2-7819-4F8D-90DF-563701887C72} = {C188B1EC-538B-457C-B5C7-38E3678F2EA4}
+		{98622D99-F0C2-46E3-8F2D-0F25F0C6078C} = {57F64093-5079-444E-8C6C-C8E86FFE51D8}
+		{6471CD1A-B7F8-4DDE-BE94-FFA53B9B1988} = {ABF9CD54-6CDA-40C4-AA57-5CDF59B13325}
+		{E74C9E5D-2B5D-4932-A9CF-0F52C8D7EF59} = {F00120C6-C5F6-499D-8015-9BCD40F8B3DD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {10783478-8132-4A47-9025-5637E04EAC68}

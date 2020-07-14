@@ -5,8 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Common\BookReader.Common\BookReader.Common.csproj" />
-    <ProjectReference Include="..\..\..\Common\BookReader.GenericEFRepository\BookReader.GenericEFRepository.csproj" />
+    <ProjectReference Include="..\..\..\Core\BookReader.Common\BookReader.Common.csproj" />
+    <ProjectReference Include="..\..\..\Core\BookReader.Dapper.Core\BookReader.Dapper.Core.csproj" />
+    <ProjectReference Include="..\..\..\Core\BookReader.EntityFramework.Core\BookReader.EntityFramework.Core.csproj" />
+    <ProjectReference Include="..\..\..\Core\BookReader.Infrastructure.Core\BookReader.Infrastructure.Core.csproj" />
+    <ProjectReference Include="..\BookReader.LibraryService.Data\BookReader.LibraryService.Data.csproj" />
   </ItemGroup>
 
 </Project>

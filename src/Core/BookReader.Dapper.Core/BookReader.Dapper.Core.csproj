@@ -5,12 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Dapper" Version="2.0.35" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BookReader.Common\BookReader.Common.csproj" />
+    <ProjectReference Include="..\BookReader.Infrastructure.Core\BookReader.Infrastructure.Core.csproj" />
   </ItemGroup>
 
 </Project>

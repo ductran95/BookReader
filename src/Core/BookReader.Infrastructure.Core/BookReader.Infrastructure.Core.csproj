@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\BookReader.Common\BookReader.Common.csproj" />
+    <ProjectReference Include="..\BookReader.Common\BookReader.Common.csproj" />
   </ItemGroup>
 
 </Project>

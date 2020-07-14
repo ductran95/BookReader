@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\BookReader.Domain.Core\BookReader.Domain.Core.csproj" />
     <ProjectReference Include="..\BookReader.IdentityService.Infrastructure\BookReader.IdentityService.Infrastructure.csproj" />
     <ProjectReference Include="..\BookReader.IdentityService.Queries\BookReader.IdentityService.Queries.csproj" />
   </ItemGroup>
